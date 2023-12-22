@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Propiedades</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon2.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+	<!-- ------------------ -->
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div id="header"></div>
+	<script>
+		$("#header").load("header.html");
+	</script>
+	<!-- end header -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h4>INMOBILIARIA & INVERSIONES</h4>
+						<h1>PROPIEDADES DISPONIBLES</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- products -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="product-filters">
+                        <ul>
+                            <li class="active" data-filter="*">Todos</li>
+                            <li data-filter=".casa">Casas</li>
+                            <li data-filter=".terreno">Terrenos</li>
+                            <li data-filter=".vehículo">Vehículos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+			<div class="row product-lists">
+				<div class="col-lg-4 col-md-6 text-center terreno">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="1">
+								<img src="assets/img/products/p1/product-img-1-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-1" style="display: none;">
+							<div class="item"><img src="assets/img/products/p1/product-img-1-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p1/product-img-1-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p1/product-img-1-3.jpg" alt=""> </div>
+							<!-- Agrega más imágenes del Producto 1 según sea necesario -->
+						</div>
+						<h3 class="text-center">TERRENO</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://maps.app.goo.gl/yMU2jwXh6mPY3AQc9"> Ver mapa</a>
+						</h6> 
+						<h6>
+							UBICADO:<p>con una hermosa vista y libre del estrés de la ciudad.</p>
+						</h6>
+						<h6>
+							DIRECCIÓN:
+							<p>
+								Carabuela Jahuapamba
+							</p>
+						</h6>
+						<h6>
+							DIMENCIONES:
+							<p>
+								29m de frente y 55m de fondo total 1.600m2
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 - 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 33.000$ </p>
+						</h6>
+						<br>
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn1" data-product-name="TERRENO" data-product-price="Carabuela Jahuapamba">
+							<i class="fas fa-shopping-cart"></i>Reservar
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center casa">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="2">
+								<img src="assets/img/products/p2/product-img-2-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-2" style="display: none;">
+							<div class="item"><img src="assets/img/products/p2/product-img-2-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p2/product-img-2-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p2/product-img-2-4.jpg" alt=""> </div>
+							<!-- Agrega más imágenes del Producto 1 según sea necesario -->
+						</div>
+
+						<h3 class="text-center">CASA</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://goo.gl/maps/oxHgzdQnZgGaRGgc6 "> Ver mapa</a>
+						</h6> 
+						<h6>
+							UBICADO:<p>a 5 minutos del centro.</p>
+						</h6>
+						<h6>
+							DIRECCIÓN:
+							<p>
+								Otavalo/ Miravalle
+							</p>
+						</h6>
+						<h6>
+							DIMENCIONES:
+							<p>
+								15m de frente y 27m de fondo Total 400m2
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 – 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 63.700$ </p>
+						</h6>
+						<br>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+							VER MAS...
+						</button>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content text-left">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">CASA</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+											<a href="https://goo.gl/maps/oxHgzdQnZgGaRGgc6 "> Ver mapa</a>
+										</h6> 
+										<h6>
+											UBICADO:<p>a 5 minutos del centro.</p>
+										</h6>
+										<h6>
+											DIRECCIÓN:
+											<p>
+												Otavalo/ Miravalle
+											</p>
+										</h6>
+										<h6>
+											DIMENCIONES:
+											<p>
+												15m de frente y 27m de fondo Total 400m2
+											</p>
+										</h6>
+				 						<h6>
+											AREA DE CONSTRUCCIÓN:
+											<p>
+												1 planta de 90m2 
+											</p>
+										</h6>
+										<h6>
+											CONSTA DE:
+											<p>
+												Sala, Cocina, Comedor, baño social, 3 dormitorios, lavandería y garaje
+											</p>
+										</h6>
+										<h6 class="fas fa-phone">
+											CONTACTO:
+											<p>
+												0985683374 – 0939433856
+											</p>
+										</h6>
+										<br>
+										<h6 class="fas fa-dollar-sign">
+											PRECIO:
+											<p class="product-price"> 63.700$ </p>
+										</h6>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Reservar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Modal -->
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn2" data-product-name="CASA" data-product-price="Otavalo/ Miravalle">
+							<i class="fas fa-shopping-cart"></i> Reservar
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center terreno">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="3">
+								<img src="assets/img/products/p3/product-img-3-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-3" style="display: none;">
+							<div class="item"><img src="assets/img/products/p3/product-img-3-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p3/product-img-3-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p3/product-img-3-4.jpg" alt=""> </div>
+						</div>
+						<h3 class="text-center">TERRENO</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://goo.gl/maps/3WcYixpW4c5ZBg6dA"> Ver mapa</a>
+						</h6> 
+						<h6>
+							CUENTA:<p>con servicios básicos y línea de buses.</p>
+						</h6>
+						<h6>
+							DIRECCIÓN:
+							<p>
+								Atuntaqui / Pucara de San Roque
+							</p>
+						</h6>
+						<h6>
+							DIMENCIONES:
+							<p>
+								13,70m de frente y 37m de fondo (total 508m2)
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 - 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 15.000$ </p>
+						</h6>
+						<br>
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn3" data-product-name="TERRENO" data-product-price="Atuntaqui / Pucara de San Roque">
+							<i class="fas fa-shopping-cart"></i> Reservar
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center casa">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="4">
+								<img src="assets/img/products/p4/product-img-4-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-4" style="display: none;">
+							<div class="item"><img src="assets/img/products/p4/product-img-4-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p4/product-img-4-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p4/product-img-4-3.jpg" alt=""> </div>
+						</div>
+						<h3 class="text-center">CASA</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://goo.gl/maps/oxHgzdQnZgGaRGgc6 "> Ver mapa</a>
+						</h6> 
+						<h6>
+							UBICADO:<p>a 5 minutos del centro.</p>
+						</h6>
+						<h6>
+							DIRECCIÓN:
+							<p>
+								Otavalo/ Miravalle
+							</p>
+						</h6>
+						<h6>
+							DIMENCIONES:
+							<p>
+								15m de frente y 27m de fondo Total 400m2
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 – 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 63.700$ </p>
+						</h6>
+						<br>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+							VER MAS...
+						</button>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content text-left">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">CASA</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+											<a href="https://goo.gl/maps/oxHgzdQnZgGaRGgc6 "> Ver mapa</a>
+										</h6> 
+										<h6>
+											UBICADO:<p>a 5 minutos del centro.</p>
+										</h6>
+										<h6>
+											DIRECCIÓN:
+											<p>
+												Otavalo/ Miravalle
+											</p>
+										</h6>
+										<h6>
+											DIMENCIONES:
+											<p>
+												15m de frente y 27m de fondo Total 400m2
+											</p>
+										</h6>
+				 						<h6>
+											AREA DE CONSTRUCCIÓN:
+											<p>
+												1 planta de 90m2 
+											</p>
+										</h6>
+										<h6>
+											CONSTA DE:
+											<p>
+												Sala, Cocina, Comedor, baño social, 3 dormitorios, lavandería y garaje
+											</p>
+										</h6>
+										<h6 class="fas fa-phone">
+											CONTACTO:
+											<p>
+												0985683374 – 0939433856
+											</p>
+										</h6>
+										<br>
+										<h6 class="fas fa-dollar-sign">
+											PRECIO:
+											<p class="product-price"> 63.700$ </p>
+										</h6>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Reservar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Modal -->
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn4" data-product-name="CASA" data-product-price="Atuntaqui / Pucara de San Roque">
+							<i class="fas fa-shopping-cart">
+							</i> Reservar</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center vehículo">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="5">
+								<img src="assets/img/products/p5/product-img-5-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-5" style="display: none;">
+							<div class="item"><img src="assets/img/products/p5/product-img-5-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p5/product-img-5-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p5/product-img-5-3.jpg" alt=""> </div>
+						</div>
+						<h3 class="text-center">CARRO</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://maps.app.goo.gl/yMU2jwXh6mPY3AQc9"> Ver mapa</a>
+						</h6> 
+						<h6>
+							CIUDAD:<p>Quito</p>
+						</h6>
+						<h6>
+							AÑO:
+							<p>
+								2022
+							</p>
+						</h6>
+						<h6>
+							RECORRIDO:
+							<p>
+								165.000 KM
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 - 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 26.000$ </p>
+						</h6>
+						<br>
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn5" data-product-name="CARRO" data-product-price="QUITO">
+							<i class="fas fa-shopping-cart"></i> Reservar
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center vehículo">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="#" class="open-modal" data-toggle="modal" data-target="#imageModal" id="6">
+								<img src="assets/img/products/p6/product-img-6-1.jpg" alt="">
+							</a>
+						</div>
+						<div id="product-images-6" style="display: none;">
+							<div class="item"><img src="assets/img/products/p6/product-img-6-1.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p6/product-img-6-2.jpg" alt=""></div>
+							<div class="item"><img src="assets/img/products/p6/product-img-6-3.jpg" alt=""> </div>
+						</div>
+						<h3 class="text-center">CARRO</h3>
+						<h6 class="fas fa-map-marker-alt"> UBICACIÓN:
+							<a href="https://maps.app.goo.gl/yMU2jwXh6mPY3AQc9"> Ver mapa</a>
+						</h6> 
+						<h6>
+							CIUDAD:<p>Quito</p>
+						</h6>
+						<h6>
+							AÑO:
+							<p>
+								2022
+							</p>
+						</h6>
+						<h6>
+							RECORRIDO:
+							<p>
+								165.000 KM
+							</p>
+						</h6>
+						<h6 class="fas fa-phone">
+							CONTACTO:
+							<p>
+								0985683374 - 0939433856
+							</p>
+						</h6>
+						<br>
+						<h6 class="fas fa-dollar-sign">
+							PRECIO:
+							<p class="product-price"> 26.000$ </p>
+						</h6>
+						<br>
+						<a href="checkout.html" class="cart-btn reserve-btn" id="reservarBtn6" data-product-name="CARRO" data-product-price="QUITO">
+							<i class="fas fa-shopping-cart"></i> Reservar
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="pagination-wrap">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a class="active" href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end products -->
+
+	<!-- logo carousel -->
+	<div class="logo-carousel-section ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="logo-carousel-inner">
+						<h4>Avalado por: </h4>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+	<!-- footer --> 
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("footer.html");
+	</script>
+	<!-- end footer-->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+	<!-- Modal -->
+	<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+		<div class="modal-dialog custom-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>imagenes </p>
+					<!-- Carrusel de Owl Carousel para mostrar las imágenes -->
+
+					<div id="imageCarousel" class="owl-carousel owl-theme"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Seleccionar todos los elementos con la clase "reserve-btn"
+			var reservarBtns = document.querySelectorAll('.reserve-btn');
+
+			// Iterar sobre cada botón y agregar un escucha de evento
+			reservarBtns.forEach(function (reservarBtn) {
+				reservarBtn.addEventListener('click', function () {
+					var productName = reservarBtn.getAttribute('data-product-name');
+					var productPrice = reservarBtn.getAttribute('data-product-price');
+					sessionStorage.setItem('selectedProduct', JSON.stringify({ name: productName, price: productPrice }));
+				});
+			});
+		});
+
+		//--------Carga imagenes---------------
+ 		document.addEventListener('DOMContentLoaded', function () {
+        var openModalLinks = document.querySelectorAll('.open-modal');
+
+        openModalLinks.forEach(function (openModalLink) {
+            openModalLink.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                var productId = openModalLink.getAttribute('id');
+				var productImagesContainer = document.getElementById('product-images-' + productId);
+				if (productImagesContainer) {
+					// Obtener imágenes del contenedor y agregarlas al carrusel
+					var images = $('#' + 'product-images-' + productId + ' .item');
+					console.log('IMAGENES', images.length);
+					//iterar cada imagen
+					images.each(function(index) {
+					console.log('Imagen ' + (index + 1) + ':', $(this).find('img').attr('src'));
+				});
+				console.error('Comenzando el código de carga de imágenes');
+					// Limpiar el carrusel antes de agregar nuevas imágenes
+					$('#imageCarousel').trigger('destroy.owl.carousel').html('');
+
+					images.each(function () {
+						var imageSrc = $(this).find('img').attr('src');
+						$('#imageCarousel').append('<div class="item"><img src="' + imageSrc + '" alt=""></div>');
+					});
+				console.error('Terminando el código de carga de imágenes');
+
+				} else {
+					console.error('Elemento no encontrado:',productImagesContainer + '-images');
+				}
+
+				$(document).ready(function(){
+				$('#imageModal').on('shown.bs.modal', function () {
+					$("#imageCarousel").owlCarousel({
+						items: 1,
+						loop: true,
+						nav: true,
+						dots: true
+					});
+				});
+			});
+            });
+        });
+    });
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<div class="top-header-area" id="sticker">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center">
+                <div class="main-menu-wrap">
+                    <!-- logo -->
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- logo -->
+
+                    <!-- menu start -->
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a>
+                            </li>
+                            <li><a href="about.html">Quiénes somos</a></li>
+	
+                            <li><a href="news.html">Servicios</a>
+                            </li>
+                            <li><a href="contact.html">Contactos</a></li>
+                            <li><a href="shop.html">Propiedades</a>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </nav>
+ 					<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+                    <div class="mobile-menu"></div>
+                    <!-- menu end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the current page name
+    var currentPage = window.location.pathname.split('/').pop();
+
+    // Select all menu items
+    var menuItems = document.querySelectorAll('.main-menu ul li a');
+
+    // Loop through each menu item
+    menuItems.forEach(function (menuItem) {
+        // Get the href attribute value
+        var href = menuItem.getAttribute('href');
+
+        // Check if the href attribute matches the current page
+        if (currentPage === href) {
+            // Add the "current-list-item" class to the parent li element
+            menuItem.parentNode.classList.add('current-list-item');
+        }
+    });
+});
+
+</script>

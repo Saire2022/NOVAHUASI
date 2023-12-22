@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Check Out</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon2.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div id="header"></div>
+	<script>
+	$("#header").load("header.html");
+	</script>
+	<!-- end header -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h4>Rápido y seguro</h4>
+						<h1>Agendar</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- check out section -->
+	<div class="checkout-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="checkout-accordion-wrap">
+						<div class="accordion" id="accordionExample">
+						  <div class="card single-accordion">
+						    <div class="card-header" id="headingOne">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Completa la información
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <div class="billing-address-form">
+									<!-- Contenido del formulario -->
+									<form ">
+										<p><input type="text" placeholder="Nombre" id="userName"></p>
+										<p><input type="text" id="productName" name="productName" placeholder="Nombre del Producto" readonly></p>
+										<p><input type="text" id="productPrice" name="productPrice" placeholder="Ubicación" readonly></p>
+										<p><input type="text" placeholder="De dónde nos escribe? (Cantón, Parroqia)" id="userLocation"></p>
+										<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Mensaje"></textarea></p>
+										<p><input onclick="enviarProducto()" id="Reservar" type="submit" value="Reservar"></p> 
+									</form>
+								</div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end check out section -->
+
+	<!-- logo carousel -->
+	<div class="logo-carousel-section ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="logo-carousel-inner">
+						<h4>Avalado por: </h4>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+	<!-- footer -->
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("footer.html");
+	</script>
+	<!-- end footer -->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var selectedProduct = sessionStorage.getItem('selectedProduct');
+            if (selectedProduct) {
+                selectedProduct = JSON.parse(selectedProduct);
+                fillForm(selectedProduct.name, selectedProduct.price);
+                sessionStorage.removeItem('selectedProduct'); // Limpiar después de llenar el formulario
+            }
+        });
+
+        function fillForm(productName, productPrice) {
+            document.getElementById('productName').value = productName;
+            document.getElementById('productPrice').value = productPrice;
+        }
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const Reservar = document.querySelector('#Reservar');
+			Reservar.addEventListener('click', function () {
+				enviarProducto(
+					document.querySelector('#userName'),
+					document.querySelector('#productName'),
+					document.querySelector('#productPrice'),
+					document.querySelector('#userLocation'),
+					document.querySelector('#bill')
+				);
+			});
+		});
+	</script>
+
+
+</body>
+</html>
