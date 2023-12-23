@@ -38,7 +38,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    var currentPage = window.location.pathname.split('/').pop();
+    var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
     console.log('Current Page:', currentPage);
 
     var menuItems = document.querySelectorAll('.main-menu ul li a');
