@@ -40,10 +40,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
     console.log('Current Page:', currentPage);
-
+    if (currentPage === ''){
+        currentPage = '/'
+    }
     var menuItems = document.querySelectorAll('.main-menu ul li a');
     menuItems.forEach(function (menuItem) {
-        var href = menuItem.getAttribute('href').replace('.html','');
+        var prefix = "/";
+        var href = menuItem.getAttribute('href').replace('.html', '');
+        href = prefix + href; 
         console.log('Link - hola:', href);
         if (currentPage === href) {
             menuItem.parentNode.classList.add('current-list-item');
