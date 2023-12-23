@@ -38,20 +38,14 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the current page name
     var currentPage = window.location.pathname.split('/').pop();
+    console.log('Current Page:', currentPage);
 
-    // Select all menu items
     var menuItems = document.querySelectorAll('.main-menu ul li a');
-
-    // Loop through each menu item
     menuItems.forEach(function (menuItem) {
-        // Get the href attribute value
         var href = menuItem.getAttribute('href');
-
-        // Check if the href attribute matches the current page
+        console.log('Link:', href);
         if (currentPage === href) {
-            // Add the "current-list-item" class to the parent li element
             menuItem.parentNode.classList.add('current-list-item');
         }
     });
