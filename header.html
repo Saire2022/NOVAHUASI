@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var menuItems = document.querySelectorAll('.main-menu ul li a');
     menuItems.forEach(function (menuItem) {
-        var href = menuItem.getAttribute('href');
+        var href = menuItem.getAttribute('href').replace('.html','');
         console.log('Link - hola:', href);
         if (currentPage === href) {
             menuItem.parentNode.classList.add('current-list-item');
