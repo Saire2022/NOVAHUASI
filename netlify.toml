@@ -1,3 +1,2 @@
 [build]
   publish = "."  # Carpeta de implementación (raíz del proyecto)
-  command = "npm run build"  # Comando para construir tu aplicación (ajústalo según tu configuración)
